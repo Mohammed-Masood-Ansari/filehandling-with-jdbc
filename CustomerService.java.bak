@@ -1,0 +1,17 @@
+package com.jsp.jdbc_statement_crud.service;
+
+import java.util.List;
+
+import com.jsp.jdbc_statement_crud.dao.CustomerDao;
+import com.jsp.jdbc_statement_crud.dto.Customer;
+
+public class CustomerService {
+
+	CustomerDao customerDao = new CustomerDao();
+
+	public List<Customer> getAllCustomer(){
+		
+		return customerDao.getAllCustomer();
+	}
+
+}
